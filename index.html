@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delícia de Bolo THE - Confeitaria & Panificadora</title>
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Cabeçalho / Navegação -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <i class="fa-solid fa-cake-candles"></i> Delícia de Bolo <span>THE</span>
+      </a>
+      <nav class="navbar" id="navbar">
+        <ul>
+          <li><a href="#home" class="active">Início</a></li>
+          <li><a href="#historia">História</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#localizacao">Localização</a></li>
+          <li><a href="#contato">Contato & Redes</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle" id="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Seção Hero / Início -->
+  <section id="home" class="hero">
+    <div class="hero-content container">
+      <h2>Sabores inesquecíveis feitos com carinho</h2>
+      <p>Os melhores bolos caseiros, tortas recheadas e salgados fofinhos de Teresina.</p>
+      <div class="hero-btns">
+        <a href="#produtos" class="btn btn-primary">Ver Cardápio</a>
+        <a href="https://wa.me/5586988562590" target="_blank" class="btn btn-whatsapp">
+          <i class="fa-brands fa-whatsapp"></i> Peça no WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção História -->
+  <section id="historia" class="section">
+    <div class="container grid-2">
+      <div class="historia-img">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80" alt="Bolo Delícia de Bolo">
+      </div>
+      <div class="historia-text">
+        <span class="subtitle">Nossa Trajetória</span>
+        <h2>Tradição e Sabor em Teresina</h2>
+        <p>A <strong>Delícia de Bolo THE</strong> nasceu do sonho de levar o aconchego do bolo caseiro feito na hora para a mesa de cada família em Teresina. Combinando receitas tradicionais, ingredientes selecionados de alta qualidade e muito afeto, nos tornamos referência em confeitaria artesanal e panificadora local.</p>
+        <p>Seja para acompanhar aquele café da tarde especial ou para celebrar datas inesquecíveis, estamos sempre prontos para servir nossos clientes com o sorrisos e o frescor que só a nossa cozinha oferece.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Produtos -->
+  <section id="produtos" class="section bg-light">
+    <div class="container">
+      <div class="section-title">
+        <span class="subtitle">Nosso Cardápio</span>
+        <h2>Delícias Feitas para Você</h2>
+      </div>
+
+      <!-- Filtros do Cardápio -->
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="todos">Todos</button>
+        <button class="filter-btn" data-filter="bolos">Bolos Caseiros</button>
+        <button class="filter-btn" data-filter="tortas">Tortas & Confeitaria</button>
+        <button class="filter-btn" data-filter="salgados">Salgados & Paes</button>
+      </div>
+
+      <!-- Grid de Produtos -->
+      <div class="product-grid">
+        <!-- Produto 1 -->
+        <div class="product-card" data-category="bolos">
+          <img src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?auto=format&fit=crop&w=600&q=80" alt="Bolo Vulcão">
+          <div class="product-info">
+            <h3>Bolo Vulcão de Ninho com Nutella</h3>
+            <p>Massa fofinha coberta com muito brigadeiro cremoso de Ninho e cobertura generosa de Nutella.</p>
+            <span class="price">R$ 45,00</span>
+          </div>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="product-card" data-category="bolos">
+          <img src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?auto=format&fit=crop&w=600&q=80" alt="Bolo de Cenoura">
+          <div class="product-info">
+            <h3>Bolo Caseiro de Cenoura</h3>
+            <p>O clássico bolo de cenoura super fofinho com a tradicional calda crocante de chocolate.</p>
+            <span class="price">R$ 22,00</span>
+          </div>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="product-card" data-category="tortas">
+          <img src="https://images.unsplash.com/photo-1535141192574-5d4897c13136?auto=format&fit=crop&w=600&q=80" alt="Torta de Morango">
+          <div class="product-info">
+            <h3>Torta Festiva de Morango</h3>
+            <p>Camadas de pão de ló, creme patissier suave e morangos frescos selecionados.</p>
+            <span class="price">R$ 85,00/kg</span>
+          </div>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="product-card" data-category="salgados">
+          <img src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=600&q=80" alt="Coxinha de Frango">
+          <div class="product-info">
+            <h3>Coxinhas Gourmet com Catupiry</h3>
+            <p>Massa leve de batata, recheio generoso de frango desfiado temperado e Catupiry original.</p>
+            <span class="price">R$ 7,50 un</span>
+          </div>
+        </div>
+
+        <!-- Produto 5 -->
+        <div class="product-card" data-category="salgados">
+          <img src="https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=600&q=80" alt="Pão de Queijo">
+          <div class="product-info">
+            <h3>Pão de Queijo Mineiro (Porção)</h3>
+            <p>Quentinhos e crocantes por fora, macios por dentro com muito queijo meia cura.</p>
+            <span class="price">R$ 12,00 (10 un)</span>
+          </div>
+        </div>
+
+        <!-- Produto 6 -->
+        <div class="product-card" data-category="tortas">
+          <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=600&q=80" alt="Torta Red Velvet">
+          <div class="product-info">
+            <h3>Torta Red Velvet</h3>
+            <p>Massa veludo vermelho com recheio aveludado de cream cheese com toque de baunilha.</p>
+            <span class="price">R$ 90,00/kg</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Localização -->
+  <section id="localizacao" class="section">
+    <div class="container">
+      <div class="section-title">
+        <span class="subtitle">Venha nos Visitar</span>
+        <h2>Nossa Localização</h2>
+      </div>
+
+      <div class="grid-2 location-wrapper">
+        <div class="location-info">
+          <div class="info-card">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <h4>Endereço</h4>
+              <p>Rua Igarassu, 2615 - Teresina, Piauí</p>
+              <p>CEP: 64002-380</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <i class="fa-solid fa-clock"></i>
+            <div>
+              <h4>Horário de Funcionamento</h4>
+              <p><span class="badge-open">Aberto</span> • Fecha às 17:00</p>
+              <p>Segunda a Sábado: 07:00 às 17:00</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <h4>Telefone & WhatsApp</h4>
+              <p>(86) 98856-2590</p>
+            </div>
+          </div>
+
+          <a href="https://maps.google.com/?q=Rua+Igarassu,+2615,+Teresina,+Piaui" target="_blank" class="btn btn-primary" style="margin-top: 10px;">
+            <i class="fa-solid fa-route"></i> Como Chegar (Google Maps)
+          </a>
+        </div>
+
+        <!-- Mapa embutido (OpenStreetMap/Google Maps simulação) -->
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.842792942079!2d-42.7963!3d-5.064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x79e120288888888%3A0x0!2sRua+Igarassu%2C+2615+-+Teresina%2C+PI!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr" 
+            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Contato & Redes -->
+  <section id="contato" class="section bg-light">
+    <div class="container">
+      <div class="section-title">
+        <span class="subtitle">Fale Conosco</span>
+        <h2>Contato e Redes Sociais</h2>
+      </div>
+
+      <div class="grid-2">
+        <!-- Formulário de Contato -->
+        <form class="contact-form" id="contactForm">
+          <h3>Envie uma Mensagem</h3>
+          <div class="form-group">
+            <input type="text" id="nome" placeholder="Seu Nome Completo" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" id="telefone" placeholder="Seu Telefone / WhatsApp" required>
+          </div>
+          <div class="form-group">
+            <textarea id="mensagem" rows="4" placeholder="Escreva sua dúvida ou pedido especial..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+        </form>
+
+        <!-- Redes Sociais e Atendimento Direct -->
+        <div class="social-box">
+          <h3>Conecte-se Conosco</h3>
+          <p>Siga-nos nas redes sociais para acompanhar nossos lançamentos diários, novidades e ofertas especiais!</p>
+          
+          <div class="social-links">
+            <a href="https://wa.me/5586988562590" target="_blank" class="social-card whatsapp">
+              <i class="fa-brands fa-whatsapp"></i>
+              <div>
+                <span>WhatsApp</span>
+                <small>(86) 98856-2590</small>
+              </div>
+            </a>
+
+            <a href="#" target="_blank" class="social-card instagram">
+              <i class="fa-brands fa-instagram"></i>
+              <div>
+                <span>Instagram</span>
+                <small>@deliciadebolothe</small>
+              </div>
+            </a>
+
+            <a href="#" target="_blank" class="social-card facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+              <div>
+                <span>Facebook</span>
+                <small>/deliciadebolothe</small>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container text-center">
+      <p>&copy; 2026 Delícia de Bolo THE. Todos os direitos reservados.</p>
+      <p><small>Rua Igarassu, 2615, Teresina - PI</small></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
